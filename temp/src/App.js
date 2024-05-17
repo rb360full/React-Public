@@ -30,8 +30,10 @@ export default class App extends Component {
     this.setState({
       users: this.state.users.filter(user => user.id !== id)
     })
-
+    
   }
+
+  
 
   render() {
     return (
