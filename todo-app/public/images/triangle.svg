@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg 
+    role="img" 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="1000mm"
+    height="1000mm"
+    viewBox="0 0 1000 1000"
+    style="max-width:1.6em; height: auto;">
+    
+    <path 
+        id="path" 
+        style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;"
+        d="M 500 50C 482 50 466 59 457 75C 457 75 7 863 7 863C -12 896 12 938 50 938C 50 938 950 938 950 938C 988 938 1012 896 993 863C 993 863 543 75 543 75C 532 59 517 50 500 50C 500 50 500 50 500 50 M 0,0"
+        transform="rotate(180,500,500)">
+    </path>    
+</svg>

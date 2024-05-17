@@ -14,6 +14,11 @@ export default class TodoListApp extends Component {
             <input className='todo-new' type='text' placeholder='Add a new todo' />
             <span className='plus-icon'><FaPlusSquare /></span>
           </div>
+          <select name="" id="">
+            <option value="All">All</option>
+            <option value="Completed">Completed</option>
+            <option value="Uncompleted">Uncompleted</option>
+          </select>
         </div>
       </div>
     )
