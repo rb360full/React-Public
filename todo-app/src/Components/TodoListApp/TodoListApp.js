@@ -4,9 +4,7 @@ import Header from '../Header/Header.js'
 import { FaPlusSquare } from "react-icons/fa";
 
 export default class TodoListApp extends Component {
-  constructor(props) {
-
-  }
+  
   render() {
     return (
       <div className='TodoListApp'>
