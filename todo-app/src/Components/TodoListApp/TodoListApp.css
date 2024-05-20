@@ -3,13 +3,17 @@
   margin: 0;
   box-sizing: border-box;
 }
-.TodoListApp {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(to right, #465ca7, #4a1973);
+.TodoListApp  {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   flex-direction: column;
+  row-gap: 2rem;
+}
+.TodoListApp .todo-list{
+  display: flex;
+  flex-direction: column;
+  
 }
 .TodoListApp .todo-header {
   display: flex;
@@ -21,7 +25,6 @@
   width: 100%;
   appearance: none;
 }
-
 
 .TodoListApp .filter-container {
   position: relative;
@@ -63,4 +66,9 @@
   right: 0;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+button[type="submit"] {
+  all: unset;
+  cursor: pointer;
 }

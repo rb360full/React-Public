@@ -1,0 +1,45 @@
+.Todo {
+  margin: 0.5rem;
+}
+
+.todo-container {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
+.Todo .todo-item {
+  padding: 1rem;
+  width: 400px;
+  font-size: 1.2rem;
+}
+.Todo .icons {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  height: 100%;
+}
+.Todo .icon {
+  color: white;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 3rem;
+  cursor: pointer;
+}
+.Todo .check-icon {
+  background-color: #4862ad;
+  display: grid;
+  place-items: center;
+}
+
+.Todo .del-icon {
+  background-color: #4a1270;
+  font-size: 1.5rem;
+}
+
+.Todo .todo-item{
+  user-select: none;
+  -moz-user-select: none;
+}
