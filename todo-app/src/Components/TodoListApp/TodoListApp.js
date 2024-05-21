@@ -73,10 +73,31 @@ export default class TodoListApp extends Component {
     this.setState({
       status: status,
     });
-    console.log(status);
-    // const filteredTodo = this.state.todoList.filter(item => item.status == status)
-    // console.log(filteredTodo);
   };
+
+  checkHandler = (id) => {
+    const itemFind = this.state.todoList.find((item) => item.id === id);
+    const newTodoList = [...this.state.todoList].map(item => {
+      if (item.id === id) {
+        item.isCompleted = !item.isCompleted
+      }
+      return item
+    })
+    this.setState({
+      todoList: newTodoList
+    })
+
+
+    console.log(this.state.todoList);
+  };
+
+
+
+  removeHandler = (id) => {
+    this.setState({
+      todoList: this.state.todoList.filter(item => item.id !== id)
+    })
+  }
 
   render() {
     return (
@@ -119,7 +140,7 @@ export default class TodoListApp extends Component {
             this.state.status == "Completed" &&
             this.state.todoList
               .filter((item) => item.isCompleted === true)
-              .map((todo) => <Todo key={todo.id} {...todo}></Todo>)}
+              .map((todo) => <Todo key={todo.id} {...todo} ></Todo>)}
 
           {this.state.todoList.length > 0 &&
             this.state.status == "Uncompleted" &&
@@ -129,7 +150,7 @@ export default class TodoListApp extends Component {
           {this.state.todoList.length > 0 &&
             this.state.status == "All" &&
             this.state.todoList.map((todo) => (
-              <Todo key={todo.id} {...todo}></Todo>
+              <Todo key={todo.id} {...todo} onCheck={() => this.checkHandler(todo.id)} onRemove={() => this.removeHandler(todo.id)}></Todo>
             ))}
         </div>
       </div>

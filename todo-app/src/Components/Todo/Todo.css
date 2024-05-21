@@ -39,7 +39,14 @@
   font-size: 1.5rem;
 }
 
-.Todo .todo-item{
+.Todo .todo-item {
   user-select: none;
   -moz-user-select: none;
+  background-color: white;
+}
+
+.Todo.completed div.todo-item {
+  color: gray;
+  text-decoration: line-through;
+  opacity: 0.5;
 }
