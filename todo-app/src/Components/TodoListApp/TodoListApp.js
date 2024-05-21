@@ -14,23 +14,7 @@ export default class TodoListApp extends Component {
         text: "",
         isCompleted: false,
       },
-      todoList: [
-        {
-          id: 1,
-          text: "Uncompleted 1",
-          isCompleted: false,
-        },
-        {
-          id: 2,
-          text: "Completed",
-          isCompleted: true,
-        },
-        {
-          id: 3,
-          text: "Uncompleted 2",
-          isCompleted: false,
-        },
-      ],
+      todoList: [],
       status: "All",
     };
   }
