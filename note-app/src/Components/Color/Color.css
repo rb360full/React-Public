@@ -1,0 +1,10 @@
+.Color .color-circle {
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border: 1px rgba(128, 128, 128, 0.404) solid;
+    
+
+}

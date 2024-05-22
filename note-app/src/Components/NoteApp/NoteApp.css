@@ -1,0 +1,53 @@
+.NoteApp * {
+user-select: none;
+}
+.NoteApp .color-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.NoteApp .header {
+  margin: 2rem auto;
+}
+
+.NoteApp input[type="text"] {
+  width: 40%;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  font-size: large;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.NoteApp .btn-container {
+  margin-top: 2rem;
+  float: right;
+  margin-right: 35%;
+}
+.NoteApp .btn-container button {
+  all: unset;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+.NoteApp .btn-container .plus-btn {
+  color: #3397df;
+  border: #3397df 2px solid;
+}
+.NoteApp .btn-container .remove-btn {
+  color: #e55046;
+  border: #e55046 2px solid;
+}
+
+.NoteApp .note-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.NoteApp .note-list > * {
+  flex: 0 0 25%;
+}
