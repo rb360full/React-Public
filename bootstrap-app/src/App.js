@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import { Button } from 'react-bootstrap'
+import { Alert } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export default class App extends Component {
+
+
+  render() {
+    return (
+      <div className='App'>
+
+        <Button variant="primary" onClick={() => console.log("Primary")}>
+          Primary
+        </Button>
+        <Alert variant="danger" dismissible onClose={this.handleCloseAlert}>
+          <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+          <Alert.Link>Heading text</Alert.Link>
+        </Alert>
+        
+
+
+      </div>
+    )
+  }
 }
-
-export default App;
