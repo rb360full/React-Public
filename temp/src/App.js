@@ -9,6 +9,7 @@ import FormRegister from "./Components/FormRegister/FormRegister";
 import Quiz from "./Components/Quiz/Quiz";
 import TicketBuy from "./Components/TicketBuy/TicketBuy";
 
+
 export default class App extends Component {
   state = {
     users: [
@@ -46,10 +47,14 @@ export default class App extends Component {
         {/* <Quiz></Quiz> */}
         {/* <TicketBuy></TicketBuy> */}
 
-        {this.state.users.map((user) => (
+        {/* {this.state.users.map((user) => (
           <User key={user.id} {...user} onRemove={this.removeHandler.bind(this, user.id)}
             onEdit={this.EditHandler.bind(this, user.id)} > <Bs2SquareFill /></User>
         ))}
+         */}
+
+         <button className="btn btn-primary">Hello</button>
+         
       </div>
     );
   }
