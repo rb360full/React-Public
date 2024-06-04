@@ -1,9 +1,6 @@
-.App {
-  padding-top: 0.5rem;
-  text-align: center;
-  
+.App{
 }
-
-.App * {
-  margin: 0.3rem ;
+.cont{
+  width: 100vw;
+  background-color: blue;
 }

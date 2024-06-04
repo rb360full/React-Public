@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component , PureComponent} from "react";
 import "./TodoListApp.css";
 import Header from "../Header/Header.js";
 import Todo from "../Todo/Todo.js";
 import { FaPlusSquare } from "react-icons/fa";
 import { TbTriangleInvertedFilled } from "react-icons/tb";
 
-export default class TodoListApp extends Component {
+export default class TodoListApp extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,6 +18,15 @@ export default class TodoListApp extends Component {
       status: "All",
     };
   }
+
+  // shouldComponentUpdate(nextProps , nextState){
+    
+    
+  //   console.log('TodoList Should update');
+  //   return true
+  // }
+
+  
 
   submitHandler = (event) => {
     event.preventDefault();

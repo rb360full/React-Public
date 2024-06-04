@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component, PureComponent } from 'react'
 import './Todo.css'
 import { FaCheck } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
-export default class Todo extends Component {
+export default class Todo extends PureComponent {
   constructor(props) {
     super(props)
     this.state = {}
@@ -18,6 +18,21 @@ export default class Todo extends Component {
   removeHandler = (id) => {
     this.props.onRemove(id)
   }
+  getSnapshotBeforeUpdate(props,state){
+    console.log('GetSnapShot',props,state);
+    return null
+  }
+  componentDidUpdate(props){
+    console.log('updated' , props);
+  }
+  
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   if (this.props.isCompleted === nextProps.isCompleted) {
+  //     return false
+  //   }
+  //   console.log('Todo Should update');
+  //   return true
+  // }
 
   render() {
 
