@@ -1,6 +1,7 @@
 import React, { Component, startTransition } from 'react'
 import './App.css'
 import { Container, Col, Row, Button, Form, Navbar, Nav, InputGroup } from 'react-bootstrap';
+import GoogleApi from './Components/GoogleApi/GoogleApi';
 
 
 
@@ -36,7 +37,9 @@ export default class App extends Component {
  
   render() {
     return (
+      
       <div className='App'>
+        <GoogleApi></GoogleApi>
         <Container className='cont bg-primary'  >
 
           <Row>
